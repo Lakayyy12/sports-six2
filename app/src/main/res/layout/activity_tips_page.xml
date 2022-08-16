@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".TipsPage">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/customborder2"
+        android:src="@drawable/banner1"
+        android:scaleType="fitXY"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="ONLINE BINGO ODDS CALCULATING"
+                android:textColor="#BAFA00"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:text="@string/tip1"
+                android:layout_below="@+id/tv1"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/tv3"
+                android:text="Cards of Bingo"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="23dp"
+                android:layout_below="@id/tv2"
+                android:textColor="#BAFA00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv4"
+                android:text="@string/tip2"
+                android:layout_below="@+id/tv3"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv4"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Players of Bingo"
+                android:textColor="#BAFA00"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv6"
+                android:text="@string/tip3"
+                android:layout_below="@+id/tv5"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/tv7"
+                android:text="Variants of Bingo"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="23dp"
+                android:layout_below="@id/tv6"
+                android:textColor="#BAFA00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv8"
+                android:text="@string/tip4"
+                android:layout_below="@+id/tv7"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="italic"/>
+
+            <Button
+                android:id="@+id/btn01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv8"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#66FF04"
+                android:text="BACK"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

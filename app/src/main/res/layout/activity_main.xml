@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/nav"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/customborder2"
+                android:scaleType="fitXY"
+                android:src="@drawable/navbar" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nav"
+                android:text="READ TO WIN"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:backgroundTint="#63FF00"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn1"
+                android:layout_marginHorizontal="50dp"
+                android:text="PROFITABLE TIPS"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:backgroundTint="#63FF00" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn2"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="10dp"
+                android:text="ABOUT"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:backgroundTint="#63FF00"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/btn3"
+                android:layout_marginTop="15dp"
+                android:clipToPadding="false"
+                android:foregroundGravity="bottom"
+                android:overScrollMode="never" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
